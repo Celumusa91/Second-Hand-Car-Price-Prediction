@@ -54,12 +54,27 @@ All data cleaning steps and analysis were done inside R-studio using R-markdown 
 
 - library(tidymodels) -> For fitting models
 
-## Data Preparation and Cleaning
+## **Data Preparation and Cleaning**
 
 - Imported the cars csv file into the environment
 
 - Selected 12 features excluding CAR_ID from the total of 13 features in the file.
 
 - Transformed Fuel_Type, Owner_Type, Transmission and Year features from Character to factor features
+
+
+## **Exploratory Data Analysis**
+
+### **STEP 1**
+
+- Distribution of Dependent variable (Price) to see if there are any outliers.
+
+- Distribution of numeric features with measures of central tendency
+
+- Pivote numeric features to a longer format and Visual numeric features distribution
+
+- Distribution of categorical features
+
+- Pivote categorical features to a longer format and visualize distribution
 
 
