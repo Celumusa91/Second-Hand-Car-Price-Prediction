@@ -33,3 +33,31 @@ The csv cars dataset was downloaded from kaggle website. Its contains the follow
 **Seats**: The number of seats available in the car.
 
 **Price**: The selling price of the car in INR (Indian Rupees), which is the target variable to predict.
+
+## Packages/ Tools employed
+
+All data cleaning steps and analysis were done inside R-studio using R-markdown format. The following packages were used for the analysis;
+
+library(readr) -> For importing data into the environment
+
+library(dplyr) -> For data manipulation
+
+library(ggplot2) -> To provide visualizations
+
+library(summarytools) -> For summary statistics
+
+library(patchwork) -> To make plot composition in R extremely simple and powerful
+
+library(paletteer) -> A collection of various color palettes found in different R packages.
+
+library(tidymodels) -> For fitting models
+
+## Data Preparation and Cleaning
+
+-Imported the cars csv file into the environment
+
+-Selected 12 features excluding CAR_ID from the total of 13 features in the file.
+
+-Transformed Fuel_Type, Owner_Type, Transmission and Year features from Character to factor features
+
+
