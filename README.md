@@ -65,7 +65,7 @@ All data cleaning steps and analysis were done inside R-studio using R-markdown 
 
 ## **Exploratory Data Analysis**
 
-### **STEP 1**
+### **STEP 1** Feature Distributions
 
 - Distribution of Dependent variable (Price) to see if there are any outliers.
 
@@ -76,5 +76,17 @@ All data cleaning steps and analysis were done inside R-studio using R-markdown 
 - Distribution of categorical features
 
 - Pivote categorical features to a longer format and visualize distribution
+
+### **STEP 2** Checking Relationships
+
+This step checks if there is statistical correlations between the Price being predicted and the Predictor features
+
+- Price and numeric features
+
+- Price and categorical features
+
+### **STEP 3** Selecting sample features statistically correlate with Price
+
+
 
 
