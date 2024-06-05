@@ -126,3 +126,23 @@ Create **lm_results** which shows actual price alongside the predicted price val
 - **step_normalize()** - Scales and normalizes numeric variables to prevent features with large values to from producing coefficients that disproportionately affect the predictions.
 
 - **step corr()** - Create a specification that remove numeric independent varaibles that are highly correlated with each other.
+
+
+## Bundle the lm model specification and the preprocessing recipe into a workflow
+
+Use the **workflow()** funtion from tidymodels library
+
+## Create a 10-folds cross validation
+
+First set the seed so that the split to ensure reproducible results of the folds.
+
+## Fit the linear model workflow with resamples
+
+Use the **fit_resamples()** function.
+
+## Evaluate the cross validation model
+
+- Use **collect_predictions()** functions to provide the model predicted values of price.
+
+- Use **collect_metrics()** functions to provide the rmse and the rsq values of the model.
+
