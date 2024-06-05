@@ -87,6 +87,12 @@ This step checks if there is statistical correlations between the Price being pr
 
 ### **STEP 3** Selecting sample features statistically correlate with Price
 
+The Price, Engine, Power, Mileage, Year, Transmission, Owner_Type,
+Fuel_Type, Brand and Model variables were selected to make up the sample of variables predict price. These  variables are variables that were discovered to correlate with Price.
 
+## **Create a data splitting formula**
+
+This step uses the initial_split function from the resamples package from tidymodels to split the data into the training and validation sets.
+The **training** function create the training set and the **testing** function creates the  test set. 80% of the sample data is allocated to the train set while the remaining 20% is allocated to the testing set.
 
 
