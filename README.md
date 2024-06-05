@@ -161,4 +161,13 @@ Set the model engine to **"xgboost"** and the model mode to **"regression"**. Se
 
 ## Bundle the xgboost specification and the recipe into a workflow
 
+Bundle the xgboost model Specification and the xgboost recipe into a **xgboost_workflow** using the **workflow()** function.
 
+## Create xgboost parameter grid
+
+Create a tree_grid for the specified xgboost hyperparameters. Levels is set equals 5 which means 5 combinations of each hyperperameter which will enable 125 models to be fitted and then select the our best comination model.
+
+## Tune the xgboost model workflow
+
+Use the tune_grid function and the sample folds(10-folds cross-validation) and use the **show_best()** function to show the model best combination with the lowest rmse and rsq values
+Use the **select_best()** function to select our best model that we can use later to predict Price with new dataset. 
