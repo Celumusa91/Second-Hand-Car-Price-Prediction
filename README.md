@@ -152,3 +152,13 @@ Use the **fit_resamples()** function.
 ## Create a xgboost model specification
 
 Set the model engine to **"xgboost"** and the model mode to **"regression"**. Set trees, tree_depth and the learn rate to tune() for the model to estimate best hyperparameter values that suite the data.
+
+## Data preprocessing recipe for xgboost model
+
+- Step_dummy()
+
+- Ste_normalize()
+
+## Bundle the xgboost specification and the recipe into a workflow
+
+
