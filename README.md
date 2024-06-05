@@ -114,3 +114,15 @@ Create **lm_results** which shows actual price alongside the predicted price val
 - rmse - The root mean squerd error is the average difference between values predicted by a model and the actual values.
 
 - rsq - The R-squared value that measures the proportion of the variance in the dependent variable explained by the independent variables in the model.
+
+# In search for a better model (rmse, rsq), Let's fit the linear model using resapmles (10-folds cross validation)
+
+## Create data preprocessing recipe
+
+- **step_dummy()** - Encodes categorical features to numeric forms.
+
+- **step_nzv()** - Step near-zero variance create a specification of a recipe that will potentially remove variables that are highl sparse and unbalanced.
+
+- **step_normalize()** - Scales and normalizes numeric variables to prevent features with large values to from producing coefficients that disproportionately affect the predictions.
+
+- **step corr()** - Create a specification that remove numeric independent varaibles that are highly correlated with each other.
