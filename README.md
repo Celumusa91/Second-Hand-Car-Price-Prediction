@@ -95,4 +95,22 @@ Fuel_Type, Brand and Model variables were selected to make up the sample of vari
 This step uses the initial_split function from the resamples package from tidymodels to split the data into the training and validation sets.
 The **training** function create the training set and the **testing** function creates the  test set. 80% of the sample data is allocated to the train set while the remaining 20% is allocated to the testing set.
 
+# Let's fit a linear model to predict Price
 
+## Create a linear model specification
+
+Set the model engine to **"lm"** and the model mode to **"regression"**
+
+## Fit the linear model specification
+
+Use the **fit** function to fit the model on the train_sample (training set)
+
+## Evaluate the model perfomance by predicting with the test_sample data set
+
+Create **lm_results** which shows actual price alongside the predicted price values obtained from the model.
+
+## Calculate linear model evaluation metrics
+
+- rmse - The root mean squerd error is the average difference between values predicted by a model and the actual values.
+
+- rsq - The R-squared value that measures the proportion of the variance in the dependent variable explained by the independent variables in the model.
