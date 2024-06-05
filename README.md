@@ -146,3 +146,9 @@ Use the **fit_resamples()** function.
 
 - Use **collect_metrics()** functions to provide the rmse and the rsq values of the model.
 
+
+# Let’s look for a better model (fit xgbbost model)
+
+## Create a xgboost model specification
+
+Set the model engine to **"xgboost"** and the model mode to **"regression"**. Set trees, tree_depth and the learn rate to tune() for the model to estimate best hyperparameter values that suite the data.
