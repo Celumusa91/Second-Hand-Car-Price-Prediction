@@ -181,3 +181,5 @@ Use the select_best function to extract the best tree model with the lowest rmse
 # **Results**
 
 Our first linear model gave us a rmse of **400035** and a rsq of **0.888**. Fitting with resamples gave us an improved rmse **282040** and rsq of **0.866**. Our xgboost model gave us a far better **173091** value of rmse. This means that xgboost model best predict price using our selected variables.
+
+To see code see(https://github.com/Celumusa91/Second-Hand-Car-Price-Prediction/blob/main/Car%20Price%20Prediction.Rmd)
