@@ -172,6 +172,8 @@ Create a tree_grid for the specified xgboost hyperparameters. Levels is set equa
 Use the tune_grid function and the sample folds(10-folds cross-validation) and use the **show_best()** function to show the model best combination with the lowest rmse and rsq values
 Use the **select_best()** function to select our best model that we can use later to predict Price with new dataset. 
 
+To see analysis report check()
+
 ## Best tree
 
 Use the select_best function to extract the best tree model with the lowest rmse. About 1 500 trees, a tree depth of 4 and a learning rate of 0.0825 give a low rmse of 173091. This rmse states that our model is off by 173091 when predicting Car Price.
